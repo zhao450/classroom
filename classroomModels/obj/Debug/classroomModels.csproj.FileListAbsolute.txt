@@ -1,0 +1,6 @@
+D:\classroom\classroomModels\bin\Debug\classroomModels.dll
+D:\classroom\classroomModels\bin\Debug\classroomModels.pdb
+D:\classroom\classroomModels\obj\Debug\classroomModels.csproj.AssemblyReference.cache
+D:\classroom\classroomModels\obj\Debug\classroomModels.csproj.CoreCompileInputs.cache
+D:\classroom\classroomModels\obj\Debug\classroomModels.dll
+D:\classroom\classroomModels\obj\Debug\classroomModels.pdb

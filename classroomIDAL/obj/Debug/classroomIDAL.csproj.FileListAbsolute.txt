@@ -1,0 +1,5 @@
+D:\classroom\classroomIDAL\bin\Debug\classroomIDAL.dll
+D:\classroom\classroomIDAL\bin\Debug\classroomIDAL.pdb
+D:\classroom\classroomIDAL\obj\Debug\classroomIDAL.csproj.CoreCompileInputs.cache
+D:\classroom\classroomIDAL\obj\Debug\classroomIDAL.dll
+D:\classroom\classroomIDAL\obj\Debug\classroomIDAL.pdb
