@@ -1,0 +1,9 @@
+D:\classroom\classroomDALFactory\bin\Debug\classroomDALFactory.dll
+D:\classroom\classroomDALFactory\bin\Debug\classroomDALFactory.pdb
+D:\classroom\classroomDALFactory\bin\Debug\classroomIDAL.dll
+D:\classroom\classroomDALFactory\bin\Debug\classroomIDAL.pdb
+D:\classroom\classroomDALFactory\obj\Debug\classroomDALFactory.csproj.AssemblyReference.cache
+D:\classroom\classroomDALFactory\obj\Debug\classroomDALFactory.csproj.CoreCompileInputs.cache
+D:\classroom\classroomDALFactory\obj\Debug\classroomDALFactory.csproj.CopyComplete
+D:\classroom\classroomDALFactory\obj\Debug\classroomDALFactory.dll
+D:\classroom\classroomDALFactory\obj\Debug\classroomDALFactory.pdb
