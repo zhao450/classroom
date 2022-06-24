@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5713408E-BE76-4CD4-9649-1569B42BFB23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>classroom</RootNamespace>
+    <AssemblyName>classroom</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UtilityLibrary, Version=1.0.3.0, Culture=neutral, PublicKeyToken=c13d07fefef8d2c7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UtilityLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.1.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2013, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2013.3.1.0\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommHelper\UseInfo.cs" />
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAcademicAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAcademicAdmin.Designer.cs">
+      <DependentUpon>FrmAcademicAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAcademicMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAcademicMes.Designer.cs">
+      <DependentUpon>FrmAcademicMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmChangeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmChangeUser.Designer.cs">
+      <DependentUpon>FrmChangeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAddTemRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAddTemRoom.Designer.cs">
+      <DependentUpon>FrmAddTemRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAddTestRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAddTestRoom.Designer.cs">
+      <DependentUpon>FrmAddTestRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAddUser.Designer.cs">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmAddZiXiRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmAddZiXiRoom.Designer.cs">
+      <DependentUpon>FrmAddZiXiRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmClassRList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmClassRList.Designer.cs">
+      <DependentUpon>FrmClassRList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmClassRoomIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmClassRoomIndex.Designer.cs">
+      <DependentUpon>FrmClassRoomIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmLeftMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmLeftMenu.Designer.cs">
+      <DependentUpon>FrmLeftMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmRightMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmRightMain.Designer.cs">
+      <DependentUpon>FrmRightMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\FrmUserLIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\FrmUserLIst.Designer.cs">
+      <DependentUpon>FrmUserLIst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAcademicAdmin.resx">
+      <DependentUpon>FrmAcademicAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAcademicMes.resx">
+      <DependentUpon>FrmAcademicMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmChangeUser.resx">
+      <DependentUpon>FrmChangeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAddTemRoom.resx">
+      <DependentUpon>FrmAddTemRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAddTestRoom.resx">
+      <DependentUpon>FrmAddTestRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmAddZiXiRoom.resx">
+      <DependentUpon>FrmAddZiXiRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmClassRList.resx">
+      <DependentUpon>FrmClassRList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmClassRoomIndex.resx">
+      <DependentUpon>FrmClassRoomIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmLeftMenu.resx">
+      <DependentUpon>FrmLeftMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmRightMain.resx">
+      <DependentUpon>FrmRightMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\FrmUserLIst.resx">
+      <DependentUpon>FrmUserLIst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\classroomBLL\classroomBLL.csproj">
+      <Project>{AABC538F-7BE2-4A0A-A281-DE49CF60A00A}</Project>
+      <Name>classroomBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\classroomModels\classroomModels.csproj">
+      <Project>{FB0B474C-6F94-41B8-9862-6704548EB460}</Project>
+      <Name>classroomModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommClass\CommClass.csproj">
+      <Project>{E3024A43-6B89-4DA0-912D-2EC0A4128032}</Project>
+      <Name>CommClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
