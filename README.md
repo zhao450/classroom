@@ -1,5 +1,7 @@
 # classroom
-教学楼信息管理系统，教室管理系统
+基于dotnet的教学楼信息管理系统，教室管理系统
+语言：c#
+数据库：mysql
 
 代码百度盘链接：https://pan.baidu.com/s/1xKPwfU-3qspnCOG32O9vmA 提取码：6666
 
